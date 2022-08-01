@@ -1,4 +1,16 @@
 # Beijing-Air-Quality-Dataset
+
+This is a test implementation for HoeffdingTree regressor implementation from scikit-multiflow.
+
+HoeffdingTree is also known as Very Fast Decision Tree (VFDT) is an incremental, anytime decision tree induction algorithm which is capable of learning from massive data streams.
+
+This code tests the accuracy, error rate of VFDT on Beijing Air Quality Dataset available at the following link:
+https://archive.ics.uci.edu/ml/machine-learning-databases/00501/
+
+# Results: 
+
+Hoeffding Tree regressor mean absolute error: $5.545911457093758$
+
 #
 Model Parameters:
 ```
@@ -20,8 +32,16 @@ Model Parameters:
  'tie_threshold': 0.05}
  ```
 #
-Hoeffding Tree regressor mean absolute error: $5.545911457093758$
-#
+Details of the Tree:
+```
+{'Active leaf byte size estimate': 0.0,
+ 'Active learning nodes': 17,
+ 'Byte size estimate overhead': 1.0,
+ 'Inactive leaf byte size estimate': 0.0,
+ 'Tree depth': 6,
+ 'Tree size (leaves)': 17,
+ 'Tree size (nodes)': 33}
+```
 
 Flow of the Tree
 ```
@@ -75,11 +95,3 @@ if Attribute 33 > -0.12201616357316761:
     if Attribute 5 > -0.3252344846272188:
       Leaf = Statistics {0: 2712.0000, 1: 392021.9879, 2: 108665974.8560}
 ```
-Details of the Tree:
-{'Active leaf byte size estimate': 0.0,
- 'Active learning nodes': 17,
- 'Byte size estimate overhead': 1.0,
- 'Inactive leaf byte size estimate': 0.0,
- 'Tree depth': 6,
- 'Tree size (leaves)': 17,
- 'Tree size (nodes)': 33}
